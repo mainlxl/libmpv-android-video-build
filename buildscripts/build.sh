@@ -6,8 +6,8 @@ cd "$( dirname "${BASH_SOURCE[0]}" )"
 cleanbuild=0
 nodeps=0
 target=mpv
-archs=(armv7l arm64 x86 x86_64)
-
+# archs=(armv7l arm64 x86 x86_64)
+archs=(armv7l arm64)
 getdeps () {
 	varname="dep_${1//-/_}[*]"
 	echo ${!varname}
