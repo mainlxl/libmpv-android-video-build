@@ -53,6 +53,9 @@ cpuflags=
 	--disable-gray \
 	--disable-swscale-alpha \
 	\
+	--enable-muxer=mp4 \
+	--enable-muxer=mov \
+	\
 	--enable-jni \
 	--enable-bsfs \
 	--enable-mediacodec \
@@ -263,6 +266,8 @@ cpuflags=
 	--enable-encoder=jpeg2000 \
 	--enable-encoder=png \
 	--enable-encoder=jpegls \
+	--enable-encoder=aac \
+	--enable-encoder=h264 \
 	\
 	--enable-network \
 
