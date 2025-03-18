@@ -15,6 +15,12 @@ jobs:
     name: Build
     runs-on: ubuntu-22.04
     steps:
+      - name: Install Git LFS
+        run: sudo apt-get install git-lfs
+      - name: Checkout code + LFS
+        uses: actions/checkout@v4
+        with:
+          lfs: true
       - name: Checkout repository
         uses: actions/checkout@v4
       - name: Setup Java JDK
